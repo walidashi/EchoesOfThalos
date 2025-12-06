@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: d92ad750258388b48a805ee0141a82d5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AttackingSwordNPC_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 433
+        width: 197
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c788e0622b001a54fad332c7d26fde38
+      internalID: 1977637656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 354
+        width: 315
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7209377d6c5839448739cdb7c05d1f9
+      internalID: 2019487121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_21
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 430
+        width: 331
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39af751db6a436e4ca72e9375eeba98e
+      internalID: -1221405531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_25
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 408
+        width: 319
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fb35f37b2b8b442b5ade6f29d6f3d0
+      internalID: -5211313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_54
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 76
+        width: 191
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b7c4e5a675a71408ec62b579f19a87
+      internalID: -2083516096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_56
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1
+        width: 351
+        height: 375
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9150cbdb0785d0543b7a47cc9b083b02
+      internalID: 1497333667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AttackingSwordNPC_64
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 76
+        width: 316
+        height: 309
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321a510760318534c95bcd873e07f191
+      internalID: -82650498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AttackingSwordNPC_21: -1221405531
+      AttackingSwordNPC_16: 1591535713
+      AttackingSwordNPC_63: 79665578
+      AttackingSwordNPC_20: -656191298
+      AttackingSwordNPC_40: 2047786972
+      AttackingSwordNPC_62: 98465608
+      AttackingSwordNPC_46: 567672284
+      AttackingSwordNPC_17: 1667031196
+      AttackingSwordNPC_53: -2060661202
+      AttackingSwordNPC_44: -1085442762
+      AttackingSwordNPC_27: -273656396
+      AttackingSwordNPC_59: 647893709
+      AttackingSwordNPC_19: 2019487121
+      AttackingSwordNPC_22: 1558809540
+      AttackingSwordNPC_23: -2025163960
+      AttackingSwordNPC_43: -681972333
+      AttackingSwordNPC_1: 1977637656
+      AttackingSwordNPC_35: 1719064714
+      AttackingSwordNPC_36: -71915720
+      AttackingSwordNPC_15: -928842998
+      AttackingSwordNPC_56: 1497333667
+      AttackingSwordNPC_7: -1705309327
+      AttackingSwordNPC_58: 97912298
+      AttackingSwordNPC_10: 389554172
+      AttackingSwordNPC_24: -342832680
+      AttackingSwordNPC_14: 1206886382
+      AttackingSwordNPC_33: -1860872881
+      AttackingSwordNPC_45: -940907517
+      AttackingSwordNPC_4: -410767594
+      AttackingSwordNPC_29: 368784023
+      AttackingSwordNPC_60: -343388203
+      AttackingSwordNPC_8: 1779279910
+      AttackingSwordNPC_38: 108374939
+      AttackingSwordNPC_25: -5211313
+      AttackingSwordNPC_18: 313097799
+      AttackingSwordNPC_31: -60904832
+      AttackingSwordNPC_48: 1572679177
+      AttackingSwordNPC_49: -2021927058
+      AttackingSwordNPC_42: 196082558
+      AttackingSwordNPC_3: -1586056364
+      AttackingSwordNPC_13: -2063046030
+      AttackingSwordNPC_0: 1759361325
+      AttackingSwordNPC_26: 940044732
+      AttackingSwordNPC_50: 1684478892
+      AttackingSwordNPC_30: 1192866494
+      AttackingSwordNPC_41: -700373042
+      AttackingSwordNPC_12: -1382460208
+      AttackingSwordNPC_52: 953754743
+      AttackingSwordNPC_57: -2038663212
+      AttackingSwordNPC_55: -1298044859
+      AttackingSwordNPC_64: -82650498
+      AttackingSwordNPC_37: 452489592
+      AttackingSwordNPC_61: -1609332019
+      AttackingSwordNPC_5: 1108953230
+      AttackingSwordNPC_2: 1877606054
+      AttackingSwordNPC_47: -380208789
+      AttackingSwordNPC_9: 24934439
+      AttackingSwordNPC_11: 1197845107
+      AttackingSwordNPC_32: 1679911934
+      AttackingSwordNPC_39: 652992372
+      AttackingSwordNPC_34: -1505636280
+      AttackingSwordNPC_54: -2083516096
+      AttackingSwordNPC_51: 771060798
+      AttackingSwordNPC_6: -508448951
+      AttackingSwordNPC_28: -1929108666
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
