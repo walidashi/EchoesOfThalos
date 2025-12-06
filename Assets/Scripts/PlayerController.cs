@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if(Input.GetKeyDown(L)){
+        if(Input.GetKey(L)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
             if(GetComponent<SpriteRenderer>()!= null){
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if(Input.GetKeyDown(R)){
+        if(Input.GetKey(R)){
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
             if(GetComponent<SpriteRenderer>()!= null){
