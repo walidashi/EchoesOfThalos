@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public KeyCode Spacebar;
     public KeyCode L;
     public KeyCode R;
+    public KeyCode Attack;
 
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -24,6 +25,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(Attack)){
+            anim.SetTrigger("AttackTrigger");
+        }
+        
         if(Input.GetKeyDown(Spacebar) && grounded){
             Jump();
         }
