@@ -62,6 +62,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate(){
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-        Debug.Log(grounded);
+
     }
 }
