@@ -42,8 +42,18 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
+<<<<<<< HEAD
+    uniqueID: 1073188473
+    locked: 0
+  - name: Foreground
+    uniqueID: 2693272103
+    locked: 0
+  - name: Player
+    uniqueID: 827165107
+=======
     uniqueID: 3858416291
     locked: 0
   - name: Terrain
     uniqueID: 3882305051
+>>>>>>> 5890008cb6ae96b33dd031daa20b458f9952841e
     locked: 0
