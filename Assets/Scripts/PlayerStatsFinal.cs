@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class PlayerStats : MonoBehaviour
+public class PlayerStatsFinal : MonoBehaviour
 {
     public int health =3;
     public int lives = 3;

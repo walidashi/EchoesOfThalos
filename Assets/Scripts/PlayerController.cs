@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public KeyCode R;
     public KeyCode Attack;
 
+    public static bool inputBlocked = false;
+    public static bool cutsceneWalking = false;
+
+
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
@@ -25,6 +29,28 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+        
+
+if (inputBlocked) {
+    
+        if (!cutsceneWalking){
+        // Stop all movement
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+        // FORCE idle animation
+        anim.SetFloat("Speed", 0);
+        anim.SetFloat("Height", 0);
+        anim.SetBool("Grounded", true);
+        }
+return;
+        
+}
+
+
+else{
         if(Input.GetKeyDown(Attack)){
             anim.SetTrigger("AttackTrigger");
         }
@@ -58,6 +84,7 @@ public class PlayerController : MonoBehaviour
         void Jump(){
             GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
+}
     }
 
     void FixedUpdate(){

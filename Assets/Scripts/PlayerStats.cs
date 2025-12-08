@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
-    public static int health = 3; //Max Health is 6 (3 full hearts)
+    public static int health = 6; //Max Health is 6 (3 full hearts)
     public static int lives = 3;
     public static int score = 0;
     public static bool hasItem = false;

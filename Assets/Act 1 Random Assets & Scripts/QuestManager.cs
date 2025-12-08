@@ -12,5 +12,11 @@ public class QuestManager : MonoBehaviour
     {
         waterFetched = true;
         FindObjectOfType<HeadVillagerTalkScript>().CompleteQuest();
+        DirectionArrowManager.target = GameObject.Find("HeadVillager").transform;
+
+
+    }
+    void Start(){
+        currentQuest = "Tutorial";
     }
 }
