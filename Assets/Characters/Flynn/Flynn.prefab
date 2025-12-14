@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7099729506158551963}
   - component: {fileID: 7099729506158551962}
   - component: {fileID: 7099729506158551961}
+  - component: {fileID: 7653513943270543656}
   - component: {fileID: 7099729506158551957}
   m_Layer: 0
   m_Name: Flynn
@@ -54,8 +55,9 @@ MonoBehaviour:
   Spacebar: 273
   L: 276
   R: 275
+  Attack: 0
   groundCheck: {fileID: 6004981526579070377}
-  groundCheckRadius: 0.5
+  groundCheckRadius: 0.05
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -158,6 +160,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7653513943270543656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099729506158551960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9bb740b27f9ba46b305ad88b0a5d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreUI: {fileID: 0}
+  heartUI: {fileID: 0}
+  flickerDuration: 0.1
+  isImmune: 0
+  immunityDuration: 1.5
 --- !u!95 &7099729506158551957
 Animator:
   serializedVersion: 4

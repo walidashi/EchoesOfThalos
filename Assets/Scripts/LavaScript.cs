@@ -2,15 +2,21 @@ using UnityEngine;
 
 public class LavaScript : MonoBehaviour
 {
-    [Tooltip("How much to increase the Y position (pivot) by, per second.")]
+    public int damage = 1;
     public float growthRate = 0.5f;
 
     void Update()
     {
-        // Move the object up by growthRate units per second
         float amountToMove = growthRate * Time.deltaTime;
         Vector3 currentPosition = transform.position;
         currentPosition.y += amountToMove;
         transform.position = currentPosition;
+    }
+
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.tag == "Player"){
+            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            Debug.Log("Damaged");
+        }
     }
 }
