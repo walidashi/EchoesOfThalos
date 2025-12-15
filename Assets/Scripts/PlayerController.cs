@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public static bool inputBlocked = false;
     public static bool cutsceneWalking = false;
-
+    public AudioClip JumpSound;
 
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -56,6 +56,7 @@ else{
         }
         
         if(Input.GetKeyDown(Spacebar) && grounded){
+            AudioManager.Instance.PlayMusicSFX(JumpSound);
             Jump();
         }
 

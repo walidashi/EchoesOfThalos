@@ -6,6 +6,9 @@ using TMPro;
 
 public class Act4PlayerStats : MonoBehaviour
 {
+    public TextMeshProUGUI KeyText; 
+
+    private int KeyCount = 0;
     public GameOverScreen GO;
     public GameObject heart1;
     public GameObject heart2;
@@ -26,6 +29,14 @@ public class Act4PlayerStats : MonoBehaviour
     private float immunityTime = 0f;
     public float immunityDuration = 1.5f;
 
+    public void CollectKey()
+    {
+        KeyCount += 1;
+        
+        // The core line: change the .text property
+        // The .ToString() method converts the number into displayable text.
+        KeyText.text = KeyCount.ToString(); 
+    }
     public void setMaxHealth(int Health)
     {
         slider.maxValue = Health;
