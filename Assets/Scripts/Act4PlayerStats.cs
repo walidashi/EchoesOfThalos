@@ -7,6 +7,10 @@ using TMPro;
 public class Act4PlayerStats : MonoBehaviour
 {
     public GameOverScreen GO;
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+
     public int health = 6;
     public int lives = 3;
     public Slider slider;
@@ -27,7 +31,6 @@ public class Act4PlayerStats : MonoBehaviour
         slider.maxValue = Health;
         slider.value = Health;        
     }
-
     public void setHealth(int Health)
     {
         slider.value = Health;       
@@ -43,14 +46,18 @@ public class Act4PlayerStats : MonoBehaviour
     {
         if (!isImmune)
         {
-            health -= damage;
-            setHealth(health);
+            health -= damage;        
             if (health < 0) health = 0;
 
             if (lives > 0 && health == 0)
             {
                 health = 6; 
                 lives--;
+                if(lives == 2) heart3.SetActive(false);
+                else if(lives == 1) heart2.SetActive(false);
+                else if(lives == 0) heart3.SetActive(false);
+                FindObjectOfType<LevelManager>().RespawnPlayer();
+                FindObjectOfType<LavaScript>().ResetPosition();
             }
             else if (lives == 0 && health == 0)
             {
@@ -62,6 +69,7 @@ public class Act4PlayerStats : MonoBehaviour
 
             Debug.Log("Player Health:" + health);
             Debug.Log("Player Lives:" + lives);
+            setHealth(health);
 
             isImmune = true;
             immunityTime = 0f;

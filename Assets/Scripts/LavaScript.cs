@@ -2,10 +2,13 @@ using UnityEngine;
 
 public class LavaScript : MonoBehaviour
 {
-    
+    private Vector3 initialPosition;
     public int damage = 2;
     public float growthRate = 0.5f;
     public SpriteRenderer Flynn;
+    void Start(){
+        initialPosition = transform.position;
+    }
     void Update()
     {
         float amountToMove = growthRate * Time.deltaTime;
@@ -19,5 +22,9 @@ public class LavaScript : MonoBehaviour
             FindObjectOfType<Act4PlayerStats>().TakeDamage(damage);
             Debug.Log("Damaged");
         }
+    }
+    public void ResetPosition()
+    {
+        transform.position = initialPosition;
     }
 }
