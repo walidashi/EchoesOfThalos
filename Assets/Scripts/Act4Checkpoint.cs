@@ -15,6 +15,7 @@ public class Act4Checkpoint : MonoBehaviour
               cameraFollow.maxX = 20;
               Destroy(Lava);
             }
+            FindObjectOfType<LevelManager>().CurrentCheckpoint=this.gameObject;
         }
     }
 }

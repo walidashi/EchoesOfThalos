@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class LavaScript : MonoBehaviour
 {
-    public int damage = 1;
+    
+    public int damage = 2;
     public float growthRate = 0.5f;
-
+    public SpriteRenderer Flynn;
     void Update()
     {
         float amountToMove = growthRate * Time.deltaTime;
@@ -15,7 +16,7 @@ public class LavaScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player"){
-            FindObjectOfType<PlayerStats>().TakeDamage(damage);
+            FindObjectOfType<Act4PlayerStats>().TakeDamage(damage);
             Debug.Log("Damaged");
         }
     }
