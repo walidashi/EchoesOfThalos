@@ -8,7 +8,7 @@ public class Act4PlayerStats : MonoBehaviour
 {
     public TextMeshProUGUI KeyText; 
 
-    private int KeyCount = 0;
+    public int KeyCount = 0;
     public GameOverScreen GO;
     public GameObject heart1;
     public GameObject heart2;
