@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5907401006607954559, guid: b9fac632b6ce3df4aa38bed0335f15f2, type: 3}
       propertyPath: Spacebar
-      value: 32
+      value: 273
       objectReference: {fileID: 0}
     - target: {fileID: 5907401006607954559, guid: b9fac632b6ce3df4aa38bed0335f15f2, type: 3}
       propertyPath: moveSpeed
@@ -1722,7 +1722,6 @@ MonoBehaviour:
   dialogueBox: {fileID: 1983740864}
   dialogueText: {fileID: 538230850}
   wellArrow: {fileID: 732879315}
-  miniGame: {fileID: 0}
 --- !u!1 &783670980
 GameObject:
   m_ObjectHideFlags: 0
