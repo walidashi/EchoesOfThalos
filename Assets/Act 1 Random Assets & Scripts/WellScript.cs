@@ -11,6 +11,9 @@ public class WellScript : MonoBehaviour
     public TMPro.TextMeshProUGUI dialogueText; //text to put inside box
     bool playerInRange = false; //boolean value to indicate if player is in range of filling the well
     public GameObject wellArrow; // the arrow that is on top of the well that indicates for the player where the well is.
+
+
+
     // Start is called before the first frame update
     void Start()
     {

@@ -37,7 +37,6 @@ public class HeadVillagerTalkScript : MonoBehaviour
         AbilityUIBox.SetActive(false);
         FlynnCanvas.SetActive(false);
         HVCanvas.SetActive(false);
-
     }
 
     void Update()

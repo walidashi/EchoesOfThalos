@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CutsceneManager : MonoBehaviour
 {
@@ -109,7 +110,7 @@ public class CutsceneManager : MonoBehaviour
         //level ends here
         Debug.Log("Level 1 Complete!");
         
-        // SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Act 2");
 
         cutscenePlaying = false;
         PlayerController.inputBlocked = false;
