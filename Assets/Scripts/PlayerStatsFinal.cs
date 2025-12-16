@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class PlayerStatsFinal : MonoBehaviour
 {
     public int health =3;
     public int lives = 3;
+    public static int score;
     private float flickerTime = 0f;
     public float flickerDuration = 0.1f;
     private SpriteRenderer sr;
@@ -15,15 +17,20 @@ public class PlayerStatsFinal : MonoBehaviour
     private float immunityTime = 0f;
     public float immunityDuration = 1.5f;
     public Image healthBar;
+    public TextMeshProUGUI LiveCounter;
+    public TextMeshProUGUI scoreUI;
+    public PlayerController playerController;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        playerController = GetComponent<PlayerController>();
     }
 
 
     void Update()
     {
+        scoreUI.text = " " + score;
         if(isImmune == true){
             SpriteFlicker();
             immunityTime = immunityTime + Time.deltaTime;
@@ -32,6 +39,7 @@ public class PlayerStatsFinal : MonoBehaviour
                 sr.enabled = true;
             }
         }
+        LiveCounter.text = " " + lives;
     }
 
     void SpriteFlicker(){
@@ -45,15 +53,21 @@ public class PlayerStatsFinal : MonoBehaviour
     }
 
      public void TakeDamage(int damage){
+        if (playerController != null && playerController.isBlocking){
+            Debug.Log("Blocked Damage!");
+            playerController.anim.SetTrigger("Earth");
+            return;
+        }
+        
         if(isImmune == false){
             health = health - damage;
-            healthBar.fillAmount = this.health/3f;
+            healthBar.fillAmount = this.health/5f;
             if (health < 0)
                 health = 0;
             if (lives > 0 && health == 0){
                 FindObjectOfType<LevelManager>().RespawnPlayer();
                 health = 3;
-                healthBar.fillAmount = this.health/3f;
+                healthBar.fillAmount = this.health/5f;
                 lives--;
             }
             else if(lives == 0 && health == 0){

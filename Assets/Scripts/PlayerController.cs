@@ -5,21 +5,37 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
+    public int damage;
     public float jumpHeight;
     public KeyCode Spacebar;
     public KeyCode L;
     public KeyCode R;
     public KeyCode Attack;
-
+    public KeyCode Sword;
+    public KeyCode Fire;
+    public KeyCode Water;
+    public KeyCode Earth;
+    
     public static bool inputBlocked = false;
     public static bool cutsceneWalking = false;
-    public AudioClip JumpSound;
+
 
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     private bool grounded;
-    private Animator anim;
+    public Animator anim;
+    public bool isBlocking = false;
+
+    public enum AbilityType{
+        Sword,
+        Fire,
+        Water,
+        Earth
+    }
+
+    public AbilityType currentAbility = AbilityType.Sword;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,12 +67,44 @@ return;
 
 
 else{
-        if(Input.GetKeyDown(Attack)){
-            anim.SetTrigger("AttackTrigger");
+        if(Input.GetKeyDown(Sword)){
+            currentAbility = AbilityType.Sword;
+            isBlocking = false;
         }
-        
+        if(Input.GetKeyDown(Fire)){
+            currentAbility = AbilityType.Fire;
+            isBlocking = false;
+        }
+        if(Input.GetKeyDown(Water)){
+            currentAbility = AbilityType.Water;
+            isBlocking = false;
+        }
+        if(Input.GetKeyDown(Earth)){
+            currentAbility = AbilityType.Earth;
+            isBlocking = true;
+        }
+
+        if(Input.GetKeyDown(Attack)){
+            switch (currentAbility){
+                case AbilityType.Sword:
+                    anim.SetTrigger("AttackTrigger");
+                    break;
+
+                case AbilityType.Fire:
+                    anim.SetTrigger("Fire");
+                    break;
+
+                case AbilityType.Water:
+                    anim.SetTrigger("Water");
+                    break;
+
+                case AbilityType.Earth:
+                    anim.SetTrigger("Earth");
+                    break;
+            }
+        }
+
         if(Input.GetKeyDown(Spacebar) && grounded){
-            AudioManager.Instance.PlayMusicSFX(JumpSound);
             Jump();
         }
 
@@ -92,4 +140,6 @@ else{
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
     }
+
+    
 }
