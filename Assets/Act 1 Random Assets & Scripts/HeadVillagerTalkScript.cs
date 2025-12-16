@@ -37,7 +37,6 @@ public class HeadVillagerTalkScript : MonoBehaviour
         AbilityUIBox.SetActive(false);
         FlynnCanvas.SetActive(false);
         HVCanvas.SetActive(false);
-
     }
 
     void Update()
@@ -136,7 +135,7 @@ IEnumerator FirstInteractionTutorial(){ //introductary tutorial to tell the play
             dialogueBox.SetActive(true);
             dialogueText.text = "Use arrows to move around.";
     yield return new WaitForSeconds(2f);
-            dialogueText.text = "Press Space to jump.";
+            dialogueText.text = "Use Arrow Up to jump.";
     yield return new WaitForSeconds(2f);
             dialogueText.text = "Follow the arrows on your screen to navigate through \nAct I.";
     yield return new WaitForSeconds(2f);
